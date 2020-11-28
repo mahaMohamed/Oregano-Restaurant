@@ -8,9 +8,9 @@
   }
   
   body{
-    font-family: Good;
     background-color: black;
     overflow-x: hidden;
+    color: white;
 
 
   }
@@ -20,11 +20,20 @@
     text-decoration: none;
     justify-content: flex-end;
     list-style-type: none;
-    font-family: Good;
+    font-family: 'Lobster', cursive;
     font-size: 25px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 1);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
 
 
+}
+
+
+h1{
+    font-family: 'Lobster', cursive;
 }
 
 
@@ -41,26 +50,30 @@ nav a:link, a:visited{
     
 }
 
-img{
+.hero img{
     width: 100%;
     height: 90%;
     object-fit: contain; 
     position: absolute;
     left: 250px;
-    /* max-width:100%;
-   max-height:100%; */
+ 
 
 }
 
-h1{
-    font-size: 50px;
+.hero h1{
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-p{
-    font-family: Chicken;
+.hero p{
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+
 }
 
-.text{
+.hero .text{
     background-color: rgba(29,28,34, 0);
     color:white;
     font-family: Chicken;
@@ -68,15 +81,245 @@ p{
     position: absolute;
     margin-left: 80px;
     margin-top: 30px;
+    top: 100px;
+    font-family: 'Lobster', cursive;
+
 
 
 }
 
 
-.box-container{
+.hero{
     background-color: black;
     width: 100vw;
     height: 640px;
     display: flex;
     justify-content: right;
+    margin-bottom: 130px;
 }
+
+
+
+
+
+.our-story, .our-story2, .photo-and-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 50px;
+
+}
+
+/* .our-story2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 50px;
+} */
+
+
+.story2-text{
+    margin-left: 50px;
+}
+
+.story-text, .story2-text, .visit-us-text{
+    background-color: white;
+    color: black;
+    height: fit-content;
+    padding-left: 40px; 
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 350px;
+    margin-top: 70px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: large;
+  
+    
+
+
+}
+
+.visit-us-text{
+    position: relative;
+    left: -50px;
+}
+
+.our-story img, .our-story2 img{
+    width: 50%;
+    height: 50%;
+}
+
+.our-story2 img{
+    margin-right: 100px;
+}
+
+.our-story h1{
+    font-family: 'Lobster', cursive;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.our-story2 h1{
+    margin-bottom: 30px;
+}
+
+.our-story p{
+    margin-bottom: 20px;
+    position: relative;
+   
+}
+
+
+.our-story button{
+    background-color: white;
+    border: 2px solid black;
+    padding: 5px;
+    font-family: 'Lobster', cursive;
+    margin: auto;
+    width: 100px;
+    font-weight: lighter;
+    font-size: 15px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    font-size: large;
+
+}
+
+
+.our-story button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+   
+}
+
+.item-a{
+    grid-area: coffee;
+    width: 350px;
+    height: 500px;
+
+}
+
+
+
+.item-b{
+    grid-area: pizza;
+    width: 400px;
+    height: 250px;
+    position: relative;
+    top: -100px;
+
+}
+
+
+
+.item-c{
+    grid-area: pasta;
+    width: 400px;
+    height: 250px;
+}
+
+
+.item-d{
+    grid-area: dessert;
+    width: 400px;
+    height: 350px;
+    margin-top: 20px;
+}
+
+.explore-button{
+    grid-area: button;
+}
+.from-the-menu{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 0px;
+    width: 80%;
+    margin: auto;
+   
+    grid-template-areas: 
+    "coffee pasta dessert"
+    "coffee pizza button";
+}
+.from-the-menu img{
+
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.from-the-menu{
+    text-align: center;
+    
+}
+.from-the-menu button{
+    position: relative;
+    bottom: -50px;
+    margin: auto;
+    padding: 5px;
+    font-family: 'Lobster', cursive;
+    margin: auto;
+    width: 400px;
+    font-weight: lighter;
+    font-size: 15px;
+    margin: auto;
+    color: black;
+    font-size: xx-large;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    
+}
+
+.explore-button button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  
+}
+
+.wrapper{
+    margin-top: 100px;
+}
+
+
+.wrapper h1, .visit-us h1{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 50px;
+    color: black;
+    padding: 20px;
+    
+
+}
+
+
+.text-wrapper{
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    color: black;
+
+}
+
+.visit-us{
+    width: 100%;
+    margin: auto;
+}
+
+
+.visit-us img{
+
+    width: 40%;
+    display: block; 
+    /* margin: auto; */
+}
+
+
