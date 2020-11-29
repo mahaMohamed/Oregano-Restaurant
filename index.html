@@ -7,9 +7,10 @@
     <title>Oregano - Authentic Italian Taste</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/gif" href="/images/icon.png" />
+
 </head>
 
 <body>
@@ -29,59 +30,58 @@
 
     <div class="hero" id="home">
         <div class="text">
-            <h1>Oregano</h1>
-            <p>Authentic Italian Taste!</p>
+            <h1 data-aos="zoom-in">Oregano</h1>
+            <p data-aos="flip-up" data-aos-delay="500" data-aos-duration="1100">Authentic Italian Taste!</p>
         </div>
-        <img src="/images/authentic-italian-pasta.jpg" alt="">
+        <img src="/images/authentic-italian-pasta.jpg" alt="" data-aos="fade-left">
 
 
     </div>
 
 
-    <div class="our-story" id="about">
-        <img src="/images/food.jpg" alt="">
-        <div class="story-text">
+    <div class="our-story" id="about" >
+        <img src="/images/food.jpg" alt="" data-aos="fade-right"> 
+        <div class="story-text" data-aos="flip-up">
             <h1>Our Story</h1>
             <p>It all began in 1990, when the Giovanni brothers settled in Egypt, and decided to bring their love for
                 their homeland Italian cuisine to the streets of Cairo. They established "Oregano", and the rest is
                 history.
             </p>
-            <!-- <button>About Us </button> -->
         </div>
     </div>
 
     <div class="our-story2">
-        <div class="story2-text">
+        <div class="story2-text" data-aos="flip-up" >
             <h1>Unparalleled Dining Experience</h1>
             <p>Like a timepiece, our Italian run kitchens and our qualified chefs, winners of many coveted awards, work to provide you with the freshest, tastiest cuisines at international standards. With beautiful surroundings, enchanting ambience, and heavenly tasting gourmet food, we provide you with unparalleled dining experience. 
             </p>
         </div>
-        <img src="/images/chef.jpg" alt="">
+        <img src="/images/chef.jpg" alt="" data-aos="fade-left">
     </div>
 
-    <div class="wrapper">
+    <div class="wrapper" data-aos="zoom-in">
         <div class="text-wrapper">
             <h1>From Our Menu</h1>
         </div>
 
-        <div class="from-the-menu">
+        <div class="from-the-menu"  >
             <div class="item-a"><img src="/images/coffee-short.jpg" alt=""></div>
             <div class="item-b"><img src="/images/pizza.jpg" alt=""></div>
             <div class="item-c"><img src="/images/pasta.jpg" alt=""></div>
             <div class="item-d"><img src="/images/dessert.jpg" alt=""></div>
-            <div class="explore-button"> <button>Explore Our Menu </button></div>
+            <div class="explore-button" data-aos="fade-left"> <button>Explore Our Menu </button></div>
         </div>
     </div>
 
 
     <div class="visit-us">
-        <div class="text-wrapper">
-            <h1>Give Us A Visit</h1>
-        </div>
+        <!-- <div class="text-wrapper" data-aos="zoom-in">
+            <h1 >Give Us A Visit!</h1>
+        </div> -->
         <div class="photo-and-text">
-            <img src="/images/oregano.jpg" alt="">
-            <div class="visit-us-text">
-            
+            <img src="/images/oregano.jpg" alt="" data-aos="fade-right">
+            <div class="visit-us-text" data-aos="flip-up">
+                <h1>Visit Us!</h1>
                 <p style="font-weight: bold;">12359 Twenty-Sixth of July St. Zamalek, Cairo, Egypt</p><br> 
                 <p> <strong>Dine-in </strong> 12:00 pm - 12:00 </p>  <br>
                 <p> <strong>Delivery </strong> 0122 225 6500</p>      <br>       
@@ -94,8 +94,9 @@
 
 
 
-
-    <script source="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <script src="js/script.js"></script>
 </body>
 
 </html>
